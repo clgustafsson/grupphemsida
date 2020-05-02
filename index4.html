@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Hem</a></li>
+      <li id="orderhere"><a href="index2.html">Beställ här!</a></li>
+      <li><a onclick="freeshipping('block')">Fri frakt*</a></li>
+      <li><a href="index3.html" id="shoppingcartnav">Varukorg (0)</a></li>
+    </ul>
+  </nav>
+  <!-- Free shipping popup -->
+  <div id="freeshipping">
+    <button onclick="freeshipping('none')">X</button>
+    <h2>Fri frakt*</h2>
+    <h3>Vi erbjuder nu fri frakt till alla våra kunder som beställer någon av våra matlådor*</h3>
+    <p id="freeshippingdisclaimer">*Fri frakt är endast tillgängligt på någon av våra utvalta produkter i vår butik*.</p>
+    <p id="storedisclaimer">*Vi har inga utvalda produkter.</p>
+  </div>
+  <header>
+  </header>
+  <section>
+    <div id="contactinformation">
+      <h1>Kontakta oss</h1>
+        <h4>Om då har frågor så kan du kontakta oss här!</h4>
+      <input type="text" name="" placeholder="Förnamn">
+      <input type="text" name="" placeholder="Efternamn">
+      <input type="text" name="" placeholder="E-post">
+      <input type="text" name="" placeholder="Telefon">
+      <input id="addressinput" type="text" name="" placeholder="Adress">
+      <input type="text" name="" placeholder="Företag">
+      <input type="text" name="" placeholder="Befattning">
+      <button type="button" name="button">Skicka</button>
+    </div>
+  </section>
+  <footer class="pagefooter">
+    <ul>
+      <li><a href="#">Till toppen</a></li>
+      <li><a href="index4.html">Kontakt</a></li>
+      <li><a href="index.html#about">Om oss</a></li>
+    </ul>
+  </footer>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

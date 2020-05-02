@@ -1,0 +1,348 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  background-color: white;
+}
+
+button {
+  background-color: lightblue;
+  color: black;
+  padding: 3px 3px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.1em;
+}
+
+button:hover {
+  background-color: grey;
+  color: #FFF;
+}
+
+#freeshipping {
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  padding: 2px;
+  border: 2px solid #131f34;
+  top: 3em;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+}
+
+#freeshipping button {
+  float: right;
+  background-color: red;
+  height: 2em;
+  width: 2em;
+}
+
+#freeshippingdisclaimer,
+#storedisclaimer {
+  font-size: 12px;
+}
+
+/*Nav*/
+nav>ul,
+.pagefooter ul {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(31, 37, 42, 0.75);
+  z-index: 1;
+  top: 0;
+}
+
+.pagefooter ul {
+  position: relative;
+  width: 100%;
+}
+
+nav li,
+.pagefooter li {
+  float: left;
+  width: 25vw;
+}
+
+nav li a,
+.pagefooter li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+nav li a:hover,
+.pagefooter li a:hover {
+  background-color: #111;
+}
+/*Section*/
+#products * {
+  text-align: center;
+}
+section {
+  margin-top: 3em;
+}
+section h1 {
+  text-align: center;
+}
+#about-img {
+  width: 100%;
+}
+.ordertypebutton {
+width: calc(50% - 2.125em);
+height: 2em;
+font-size: 20px;
+margin-left: 1em;
+margin-right: 1em;
+}
+#centerorderbuttons {
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 40em;
+}
+/*Header*/
+header>img {
+  width: 100%;
+}
+
+header {
+  position: relative;
+}
+
+header>#headertext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header>#headertext>* {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  text-align: center;
+}
+header>#headertext>a {
+  font-size: 40px;
+  padding: 0.3em 1em 0.3em 1em;
+      background-color: rgba(31, 37, 42, 0.75);
+      width: calc(100% - 2em);
+}
+
+
+/*index2.html*/
+.lunchbox {
+  margin: 0 2vw 2vw 2vw;
+  float: left;
+  background-color: rgba(31, 37, 42, 0.05);
+  color: black;
+}
+.lunchbox img {
+  width: 100%;
+}
+.lunchbox h3 {
+  text-align: center;
+}
+#lunchboxcontainer {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
+  grid-template-rows: auto;
+}
+.productinfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(3, auto);
+}
+.productinfo .containinfo {
+  grid-column: 1/3;
+      grid-row: 1;
+      height: 3em;
+      margin-left: 5px;
+}
+.productinfo .priceinfo {
+  grid-column: 1/3;
+      grid-row: 2;
+          margin-left: 5px;
+}
+.productinfo .amountinfo {
+  grid-column: 1/2;
+      grid-row: 3;
+          margin-left: 5px;
+}
+.productinfo button {
+  grid-column: 2/3;
+    grid-row: 3;
+    font-size: 20px;
+}
+#productpage {
+  margin-top: 4em;
+}
+
+#productimage {
+  background-color: #34495e;
+  -webkit-transition: background-color 1500ms linear;
+  -ms-transition: background-color 1500ms linear;
+  transition: background-color 1500ms linear;
+}
+
+#productimage:hover {
+  background-color: #e74c3c;
+  -webkit-transition: background-color 1500ms linear;
+  -ms-transition: background-color 1500ms linear;
+  transition: background-color 1500ms linear;
+}
+
+/*index3.html*/
+#shoppingcart ul,
+#totalinfo {
+  list-style-type: none;
+  margin: 0 2vw 0 2vw;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(31, 37, 42, 0.05);
+  ;
+}
+
+#shoppingcart li {
+  float: left;
+  width: 24vw;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+#totalinfo {
+  background-color: rgba(31, 37, 42, 0.1);
+  text-align: center;
+}
+
+#totalinfo li {
+  float: left;
+  width: 32vw;
+}
+
+#shoppingcart {
+  margin-top: 4em;
+}
+
+#shoppingcart input {
+  border: none;
+}
+
+#shoppingcart input:invalid {
+  background-color: red;
+}
+
+input {
+  width: 7vw;
+}
+#contactinformation {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgrey;
+padding: 3em;
+  padding-top: 1em;
+}
+#contactinformation h4,
+#contactinformation h1{
+  text-align: center;
+  font-weight: 300;
+}
+#contactinformation button {
+  background-color: darkgrey;
+  width: 30%;
+  height: 4em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  font-size:13px;
+  font-weight: 400;
+}
+#contactinformation button:hover {
+  background-color: black;
+}
+#contactinformation input {
+  width: calc(50% - 1.25em);
+  margin: 0.5em;
+  border: solid grey 2px;
+  padding: 1.5em 1.5em 1.5em 2em;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+#contactinformation input:hover {
+  border-color: black;
+}
+#addressinput {
+  width: calc(100% - 1em)!important;
+}
+/*Media query*/
+@media screen and (max-width: 787px) {
+
+  nav li,
+  .pagefooter li {
+    width: 100vw;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  header {
+    height: 9em;
+    overflow: hidden;
+  }
+
+  .products {
+    padding-top: 1vh;
+  }
+
+  #productpage {
+    margin-top: 10em;
+  }
+
+  #shoppingcart {
+    margin-top: 10em;
+  }
+
+  #freeshipping {
+    top: 10em;
+  }
+  .column {
+    float: left;
+    width: 96%;
+  }
+  #index2section {
+    margin-top: 10em;
+  }
+  #contactinformation input {
+    width: calc(100% - 1em);
+  }
+  header>#headertext {
+    display: none;
+  }
+  .ordertypebutton {
+    width: 100%;
+  }
+  #centerorderbuttons {
+    width: calc(100% - 2.5em);
+    margin: 0;
+  }
+}

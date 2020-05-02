@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Shoppingcart.">
+    <title>Shoppingcart - Take home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body id="index3body">
+    <nav>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li id="orderhere"><a href="index2.html">Beställ här!</a></li>
+            <li><a onclick="freeshipping('block')">Fri frakt*</a></li>
+            <li><a href="index3.html" id="shoppingcartnav">Varukorg (0)</a></li>
+        </ul>
+    </nav>
+    <!-- Free shipping popup -->
+    <div id="freeshipping">
+        <button onclick="freeshipping('none')">X</button>
+        <h2>Fri frakt*</h2>
+        <h3>Vi erbjuder nu fri frakt till alla våra kunder som beställer någon av våra matlådor*</h3>
+        <p id="freeshippingdisclaimer">*Fri frakt är endast tillgängligt på någon av våra utvalta produkter i vår butik*.</p>
+        <p id="storedisclaimer">*Vi har inga utvalda produkter.</p>
+    </div>
+    <section id="shoppingcart">
+        <ul>
+            <li>Name</li>
+            <li>Amount</li>
+            <li>Price/item</li>
+            <li>Price</li>
+        </ul>
+    </section>
+    <footer>
+        <ul id="totalinfo">
+            <li id="totalamount">Total amount of products:0</li>
+            <li id="totalprice">Total price:0</li>
+            <li><button>Order Now</button></li>
+        </ul>
+    </footer>
+    <!-- Template for handlebars, will be inserted in section once for every item in array "myBag" sessionStorage.myBag -->
+    <script id="product-template" type="text/x-handlebars-template">
+        <div id="{{0}}" class="cartproduct">
+    <ul>
+        <li>{{0}}</li>
+        <li><input id="inputamount{{0}}" type="number" value="{{1}}" min="0" oninput="addtocart('{{0}}', '{{2}}')" onfocusout="addtocart('{{0}}', '{{2}}')"></li>
+        <li>{{2}}</li>
+        <li id="price{{0}}">{{3}}</li>
+    </ul>
+    </div>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="js/javascript3.js"></script>
+</body>
+
+</html>
