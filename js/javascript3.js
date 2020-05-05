@@ -17,8 +17,8 @@ function totalinfo() { //updates the shoppingcarts totalamount and totalprize
         totalprice = parseInt(totalprice) + parseInt(item[3]);
         totalamount = parseInt(totalamount) + parseInt(item[1]);
     });
-    document.getElementById("totalamount").innerHTML = "Total amount of products:" + totalamount;
-    document.getElementById("totalprice").innerHTML = "Total price:" + totalprice;
+    document.getElementById("totalamount").innerHTML = "Antal produkter:" + totalamount;
+    document.getElementById("totalprice").innerHTML = "Summa:" + totalprice;
 }
 
 function addtocart(target, productprice) { //adding / removing products via input
