@@ -2,110 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Best mountains in class.">
-    <title>Beställ här! Take home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Best mountains in class.">
+  <title>Beställ här! Take home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Hem</a></li>
-            <li id="orderhere"><a href="index2.html">Beställ här!</a></li>
-            <li><a onclick="freeshipping('block')">Fri frakt*</a></li>
-            <li><a href="index3.html" id="shoppingcartnav">Varukorg (0)</a></li>
-        </ul>
-    </nav>
-    <!-- Free shipping popup -->
-    <div id="freeshipping">
-        <button onclick="freeshipping('none')">X</button>
-        <h2>Fri frakt*</h2>
-        <h3>Vi erbjuder nu fri frakt till alla våra kunder som beställer någon av våra matlådor*</h3>
-        <p id="freeshippingdisclaimer">*Fri frakt är endast tillgängligt på någon av våra utvalta produkter i vår butik*.</p>
-        <p id="storedisclaimer">*Vi har inga utvalda produkter.</p>
-    </div>
-    <section id="index2section">
-      <h1>Beställ dina matlådor här!</h1>
-      <div id="centerorderbuttons">
+  <nav>
+    <ul>
+      <li><a href="index.html">Hem</a></li>
+      <li id="orderhere"><a href="index2.html">Beställ här!</a></li>
+      <li><a onclick="freeshipping('block')">Fri frakt*</a></li>
+      <li><a href="index3.html" id="shoppingcartnav">Varukorg (0)</a></li>
+    </ul>
+  </nav>
+  <!-- Free shipping popup -->
+  <div id="freeshipping">
+    <button onclick="freeshipping('none')">X</button>
+    <h2>Fri frakt*</h2>
+    <h3>Vi erbjuder nu fri frakt till alla våra kunder som beställer någon av våra matlådor*</h3>
+    <p id="freeshippingdisclaimer">*Fri frakt är endast tillgängligt på någon av våra utvalta produkter i vår butik*.</p>
+    <p id="storedisclaimer">*Vi har inga utvalda produkter.</p>
+  </div>
+  <section id="index2section">
+    <h1>Beställ dina matlådor här!</h1>
+    <div id="centerorderbuttons">
       <button class="ordertypebutton" type="button" name="button">Privat</button>
       <button class="ordertypebutton" type="button" name="button">Företag</button>
-      </div>
-      <div id="lunchboxcontainer">
+    </div>
+    <div id="lunchboxcontainer">
       <div class="lunchbox">
-      <h3>Klassikern</h3>
-      <img src="img/lunchbox.jpg" alt="lunchbox">
-      <div class="productinfo">
-      <p class="containinfo">Innehåller: Ris med kyckling och massa andra grejer</p>
-      <p class="priceinfo">Pris: 50kr/st</p>
-      <p class="amountinfo">Antal: <input id="product1amount" type="number" name="Antal:" value="1" min="1"></p>
-      <button type="button" name="button" onclick="addtocart('Klassikern', '50', 'product1amount')">Lägg i varukorg</button>
-      </div>
-      </div>
-      <div class="lunchbox">
-      <h3>Skrovlådan</h3>
-      <img src="img/lunchbox.jpg" alt="lunchbox">
-      <div class="productinfo">
-        <p class="containinfo">Innehåller: 3 tomater, 2 ägg, ärtor och lite till på sidan om</p>
-      <p class="priceinfo">Pris: 50kr/st</p>
-      <p class="amountinfo">Antal: <input id="product2amount" type="number" name="Antal:" value="1" min="1"></p>
-      <button type="button" name="button" onclick="addtocart('Skrovlådan', '50', 'product2amount')">Lägg i varukorg</button>
-      </div>
+        <h3>Klassikern</h3>
+        <img src="img/lunchbox.jpg" alt="lunchbox">
+        <div class="productinfo">
+          <p class="containinfo">Innehåller: Ris med kyckling och massa andra grejer</p>
+          <p class="priceinfo">Pris: 50kr/st</p>
+          <p class="amountinfo">Antal: <input id="product1amount" type="number" name="Antal:" value="1" min="1"></p>
+          <button type="button" name="button" onclick="addtocart('Klassikern', '50', 'product1amount')">Lägg i varukorg</button>
+        </div>
       </div>
       <div class="lunchbox">
-      <h3>Den exotiska</h3>
-      <img src="img/lunchbox.jpg" alt="lunchbox">
-      <div class="productinfo">
-        <p class="containinfo">Innehåller: Kinesiskt gräs med död fågel, lite grönt och två helkokta småfåglar</p>
-      <p class="priceinfo">Pris: 50kr/st</p>
-      <p class="amountinfo">Antal: <input id="product3amount" type="number" name="Antal:" value="1" min="1"></p>
-      <button type="button" name="button" onclick="addtocart('Den exotiska', '50', 'product3amount')">Lägg i varukorg</button>
-      </div>
-      </div>
-      <div class="lunchbox">
-      <h3>Savannen</h3>
-      <img src="img/lunchbox.jpg" alt="lunchbox">
-      <div class="productinfo">
-        <p class="containinfo">Innehåller: Härlig matlåda med kyckling lika torr som savannen</p>
-      <p class="priceinfo">Pris: 50kr/st</p>
-      <p class="amountinfo">Antal: <input id="product4amount"type="number" name="Antal:" value="1" min="1"></p>
-      <button type="button" name="button" onclick="addtocart('Savannen', '50', 'product4amount')">Lägg i varukorg</button>
-      </div>
+        <h3>Skrovlådan</h3>
+        <img src="img/lunchbox.jpg" alt="lunchbox">
+        <div class="productinfo">
+          <p class="containinfo">Innehåller: 3 tomater, 2 ägg, ärtor och lite till på sidan om</p>
+          <p class="priceinfo">Pris: 50kr/st</p>
+          <p class="amountinfo">Antal: <input id="product2amount" type="number" name="Antal:" value="1" min="1"></p>
+          <button type="button" name="button" onclick="addtocart('Skrovlådan', '50', 'product2amount')">Lägg i varukorg</button>
+        </div>
       </div>
       <div class="lunchbox">
-      <h3>Kanonen</h3>
-      <img src="img/lunchbox.jpg" alt="lunchbox">
-      <div class="productinfo">
-        <p class="containinfo">Innehåller: Spröd kycklingklubba med härligt jasminris och färska grönsaker. Utöver den fantastiska smaken rensar lådan tarmsystemet otroligt väl</p>
-      <p class="priceinfo">Pris: 50kr/st</p>
-      <p class="amountinfo">Antal: <input id="product5amount" type="number" name="Antal:" value="1" min="1"></p>
-      <button type="button" name="button" onclick="addtocart('Kanonen', '50', 'product5amount')">Lägg i varukorg</button>
-      </div>
+        <h3>Den exotiska</h3>
+        <img src="img/lunchbox.jpg" alt="lunchbox">
+        <div class="productinfo">
+          <p class="containinfo">Innehåller: Kinesiskt gräs med död fågel, lite grönt och två helkokta småfåglar</p>
+          <p class="priceinfo">Pris: 50kr/st</p>
+          <p class="amountinfo">Antal: <input id="product3amount" type="number" name="Antal:" value="1" min="1"></p>
+          <button type="button" name="button" onclick="addtocart('Den exotiska', '50', 'product3amount')">Lägg i varukorg</button>
+        </div>
       </div>
       <div class="lunchbox">
-      <h3>Gårdagens</h3>
-      <img src="img/lunchbox.jpg" alt="lunchbox">
-      <div class="productinfo">
-        <p class="containinfo">Innehåller: Lite gyllengrön på sina ställen</p>
-      <p class="priceinfo">Pris: 50kr/st</p>
-      <p class="amountinfo">Antal: <input id="product6amount" type="number" name="Antal:" value="1" min="1"></p>
-      <button type="button" name="button" onclick="addtocart('Gårdagens', '50', 'product6amount')">Lägg i varukorg</button>
+        <h3>Savannen</h3>
+        <img src="img/lunchbox.jpg" alt="lunchbox">
+        <div class="productinfo">
+          <p class="containinfo">Innehåller: Härlig matlåda med kyckling lika torr som savannen</p>
+          <p class="priceinfo">Pris: 50kr/st</p>
+          <p class="amountinfo">Antal: <input id="product4amount" type="number" name="Antal:" value="1" min="1"></p>
+          <button type="button" name="button" onclick="addtocart('Savannen', '50', 'product4amount')">Lägg i varukorg</button>
+        </div>
       </div>
+      <div class="lunchbox">
+        <h3>Kanonen</h3>
+        <img src="img/lunchbox.jpg" alt="lunchbox">
+        <div class="productinfo">
+          <p class="containinfo">Innehåller: Spröd kycklingklubba med härligt jasminris och färska grönsaker. Utöver den fantastiska smaken rensar lådan tarmsystemet otroligt väl</p>
+          <p class="priceinfo">Pris: 50kr/st</p>
+          <p class="amountinfo">Antal: <input id="product5amount" type="number" name="Antal:" value="1" min="1"></p>
+          <button type="button" name="button" onclick="addtocart('Kanonen', '50', 'product5amount')">Lägg i varukorg</button>
+        </div>
       </div>
+      <div class="lunchbox">
+        <h3>Gårdagens</h3>
+        <img src="img/lunchbox.jpg" alt="lunchbox">
+        <div class="productinfo">
+          <p class="containinfo">Innehåller: Lite gyllengrön på sina ställen</p>
+          <p class="priceinfo">Pris: 50kr/st</p>
+          <p class="amountinfo">Antal: <input id="product6amount" type="number" name="Antal:" value="1" min="1"></p>
+          <button type="button" name="button" onclick="addtocart('Gårdagens', '50', 'product6amount')">Lägg i varukorg</button>
+        </div>
       </div>
-    </section>
-    <footer class="pagefooter">
-      <ul>
-        <li><a href="#">Till toppen</a></li>
-        <li><a href="index4.html">Kontakt</a></li>
-        <li><a href="index.html#about">Om oss</a></li>
-      </ul>
-    </footer>
-    <script src="js/javascript2.js"></script>
+    </div>
+  </section>
+  <footer class="pagefooter">
+    <ul>
+      <li><a href="#">Till toppen</a></li>
+      <li><a href="index4.html">Kontakt</a></li>
+      <li><a href="index.html#about">Om oss</a></li>
+    </ul>
+  </footer>
+  <script src="js/javascript2.js"></script>
 </body>
 
 </html>

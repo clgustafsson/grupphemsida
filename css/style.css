@@ -70,7 +70,7 @@ nav>ul,
 nav li,
 .pagefooter li {
   float: left;
-  width: 25vw;
+  width: 25%;
 }
 
 nav li a,
@@ -86,32 +86,39 @@ nav li a:hover,
 .pagefooter li a:hover {
   background-color: #111;
 }
+
 /*Section*/
 #products * {
   text-align: center;
 }
+
 section {
   margin-top: 3em;
 }
+
 section h1 {
   text-align: center;
 }
+
 #about-img {
   width: 100%;
 }
+
 .ordertypebutton {
-width: calc(50% - 2.125em);
-height: 2em;
-font-size: 20px;
-margin-left: 1em;
-margin-right: 1em;
+  width: calc(50% - 2.125em);
+  height: 2em;
+  font-size: 20px;
+  margin-left: 1em;
+  margin-right: 1em;
 }
+
 #centerorderbuttons {
   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em;
 }
+
 /*Header*/
 header>img {
   width: 100%;
@@ -135,13 +142,13 @@ header>#headertext>* {
   font-size: 60px;
   text-align: center;
 }
+
 header>#headertext>a {
   font-size: 40px;
   padding: 0.3em 1em 0.3em 1em;
-      background-color: rgba(31, 37, 42, 0.75);
-      width: calc(100% - 2em);
+  background-color: rgba(31, 37, 42, 0.75);
+  width: calc(100% - 2em);
 }
-
 
 /*index2.html*/
 .lunchbox {
@@ -150,44 +157,53 @@ header>#headertext>a {
   background-color: rgba(31, 37, 42, 0.05);
   color: black;
 }
+
 .lunchbox img {
   width: 100%;
 }
+
 .lunchbox h3 {
   text-align: center;
 }
+
 #lunchboxcontainer {
   margin-top: 1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24em, 1fr));
   grid-template-rows: auto;
 }
+
 .productinfo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
 }
+
 .productinfo .containinfo {
   grid-column: 1/3;
-      grid-row: 1;
-      height: 3em;
-      margin-left: 5px;
+  grid-row: 1;
+  height: 3em;
+  margin-left: 5px;
 }
+
 .productinfo .priceinfo {
   grid-column: 1/3;
-      grid-row: 2;
-          margin-left: 5px;
+  grid-row: 2;
+  margin-left: 5px;
 }
+
 .productinfo .amountinfo {
   grid-column: 1/2;
-      grid-row: 3;
-          margin-left: 5px;
+  grid-row: 3;
+  margin-left: 5px;
 }
+
 .productinfo button {
   grid-column: 2/3;
-    grid-row: 3;
-    font-size: 20px;
+  grid-row: 3;
+  font-size: 20px;
 }
+
 #productpage {
   margin-top: 4em;
 }
@@ -251,20 +267,23 @@ header>#headertext>a {
 input {
   width: 7vw;
 }
+
 #contactinformation {
   width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   background-color: lightgrey;
-padding: 3em;
+  padding: 3em;
   padding-top: 1em;
 }
+
 #contactinformation h4,
-#contactinformation h1{
+#contactinformation h1 {
   text-align: center;
   font-weight: 300;
 }
+
 #contactinformation button {
   background-color: darkgrey;
   width: 30%;
@@ -273,12 +292,14 @@ padding: 3em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
-  font-size:13px;
+  font-size: 13px;
   font-weight: 400;
 }
+
 #contactinformation button:hover {
   background-color: black;
 }
+
 #contactinformation input {
   width: calc(50% - 1.25em);
   margin: 0.5em;
@@ -287,12 +308,15 @@ padding: 3em;
   font-size: 12px;
   box-sizing: border-box;
 }
+
 #contactinformation input:hover {
   border-color: black;
 }
+
 #addressinput {
-  width: calc(100% - 1em)!important;
+  width: calc(100% - 1em) !important;
 }
+
 /*Media query*/
 @media screen and (max-width: 787px) {
 
@@ -325,22 +349,28 @@ padding: 3em;
   #freeshipping {
     top: 10em;
   }
+
   .column {
     float: left;
     width: 96%;
   }
+
   #index2section {
     margin-top: 10em;
   }
+
   #contactinformation input {
     width: calc(100% - 1em);
   }
+
   header>#headertext {
     display: none;
   }
+
   .ordertypebutton {
     width: 100%;
   }
+
   #centerorderbuttons {
     width: calc(100% - 2.5em);
     margin: 0;
